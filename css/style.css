@@ -66,9 +66,18 @@ img {
 }
 
 .logo h1 {
+  width: 8rem;
+  color: darkgreen;
   font-style: italic;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  font-size: 2rem;
+  line-height: 17%;
+}
+
+.logo span {
+  margin: -4px;
+  font-size: 0.75rem;
 }
 
 .menu {
