@@ -1,0 +1,82 @@
+:root {
+  font-family: serif;
+  font-size: 0.7rem;
+  --boxsize: 80vw;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #232323;
+}
+
+img {
+  max-width: 100%;
+}
+
+#pages,
+#dropdown,
+.container {
+  display: none;
+}
+
+/* ---link from the top-------------------------------- */
+
+.icons {
+  font-size: 1.5rem;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  padding: 0.5rem 0 1rem;
+  border-bottom: 2px solid green;
+}
+
+.nav-links a {
+  color: grey;
+  padding: 0 0.5rem;
+}
+
+.nav-links :not(:last-child) {
+  border-right: 1px solid grey;
+}
+
+/* ---------------------------------------------------- */
+
+.nav-bg {
+  background-color: white;
+}
+
+.nav-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: var(--boxsize);
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  font-style: italic;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.menu {
+  display: flex;
+  height: 50%;
+}
+
+.menu * {
+  border: 1px solid blue;
+  padding: 1.5rem 1rem;
+}
