@@ -2,6 +2,7 @@
   font-family: serif;
   font-size: 0.7rem;
   --boxsize: 80vw;
+  --theme-color: #8aba56;
 }
 
 * {
@@ -34,7 +35,7 @@ img {
   justify-content: space-around;
   align-items: baseline;
   padding: 0.5rem 0 1rem;
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid var(--theme-color);
 }
 
 .nav-links a {
@@ -58,6 +59,7 @@ img {
   align-items: center;
   width: var(--boxsize);
   margin: 0 auto;
+  padding: 0.4rem 0;
 }
 
 .logo {
@@ -86,6 +88,12 @@ img {
 }
 
 .menu * {
-  border: 1px solid blue;
-  padding: 1.5rem 1rem;
+  padding: 1.7rem 1.2rem;
 }
+
+.menu *:hover {
+  background-color: var(--theme-color);
+  color: white;
+}
+
+/* ---------------------------------------------------- */
