@@ -12,9 +12,10 @@
     "Helvetica Neue",
     sans-serif;
   font-size: 0.8rem;
-  --boxsize: 80vw;
+  --boxsize: 75vw;
   --theme-green: #8aba56;
   --theme-grey: #232323;
+  height: 100vh;
 }
 
 * {
@@ -28,6 +29,11 @@ body {
 
 img {
   max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 #pages,
@@ -59,7 +65,7 @@ img {
   border-right: 1px solid grey;
 }
 
-/* ---------------------------------------------------- */
+/* ---Menu--------------------------------------------- */
 
 .nav-bg {
   background-color: white;
@@ -138,12 +144,89 @@ img {
 /* ---------------------------------------------------- */
 
 .cardholder {
-  background-color: grey;
+  width: var(--boxsize);
   display: flex;
-  flex-basis: 80vw;
+  margin: 9rem auto;
+  justify-content: space-between;
 }
 
 .card {
-  border: 2px solid red;
-  height: 20vh;
+  background-color: white;
+  flex-basis: calc(100% / 3 - 1rem);
+  display: flex;
+  flex-direction: column;
+  opacity: 0.4;
+  transition: 0.2s;
+}
+
+.card:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.card-heading {
+  flex-basis: 8.5rem;
+  font-family: serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card-body {
+  flex-basis: 20.5rem;
+  font-size: 1.2rem;
+  color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 3.5rem;
+}
+
+.card-readmore {
+  flex-basis: 4.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-color: var(--theme-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------------------------------------------------- */
+
+h2 {
+  font-family: serif;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 3.5rem 0;
+}
+
+#readmore {
+  background-color: white;
+
+  & section {
+    padding: 3rem 0;
+    width: var(--boxsize);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    & article {
+      background-color: grey;
+      flex-basis: calc(100% / 2 - 1.5rem);
+
+      & div {
+        background-color: black;
+        color: white;
+        height: 37rem;
+      }
+    }
+  }
 }
