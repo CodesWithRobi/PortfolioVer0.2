@@ -58,6 +58,7 @@ a {
   & a:hover {
     color: var(--theme-green);
     text-decoration: underline;
+    cursor: pointer;
   }
 }
 
@@ -133,6 +134,17 @@ a {
   position: absolute;
   margin-top: 1.7rem;
   margin-left: -1.2rem;
+  height: 10rem;
+  padding: 0;
+
+  & div {
+    padding: 0.4rem 1rem;
+    margin: 0;
+
+    &:hover {
+      background-color: var(--theme-green);
+    }
+  }
 }
 
 #pages:checked+label,
@@ -457,6 +469,7 @@ address {
         color: grey;
         padding: 0.5rem;
         width: 100%;
+        outline: none;
       }
 
       & button {
