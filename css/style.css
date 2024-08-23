@@ -305,4 +305,64 @@ h2 {
   }
 }
 
+/* ---bottom readme------------------------------------ */
+
+.bottom-readmore {
+  background-color: #f3f3f3;
+
+  & section {
+    width: var(--boxsize);
+    margin: 0 auto;
+
+    &>h2 {
+      margin: 0;
+      padding-top: 3rem;
+      text-align: center;
+    }
+
+    & p {
+      margin: 0 0;
+      text-align: center;
+    }
+
+    article {
+      display: flex;
+      justify-content: space-between;
+      color: white;
+      padding: 4rem 0;
+
+      & .bottom-readmore-card {
+        background-color: #f0ad4e;
+        flex-basis: calc(100% / 2 - 1.5rem);
+        display: flex;
+
+        &>div {
+          flex-basis: 50%;
+        }
+
+        & .bottom-readmore-image {
+          background-image: url("../assets/placeholder.png");
+        }
+
+        & .bottom-readmore-main {
+          padding-left: 2rem;
+
+          &>h2 {
+            margin: 2rem 0;
+          }
+
+          & .readmore-button {
+            color: white;
+            border: 1px solid white;
+          }
+        }
+
+        &:nth-child(2) {
+          background-color: #6fd2e5;
+        }
+      }
+    }
+  }
+}
+
 /* ---------------------------------------------------- */
