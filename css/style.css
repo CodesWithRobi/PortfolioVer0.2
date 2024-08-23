@@ -377,6 +377,11 @@ h2 {
           & .readmore-button {
             color: white;
             border: 1px solid white;
+
+            &:hover {
+              color: #f0ad4e;
+              background-color: white;
+            }
           }
 
           &:hover {
@@ -386,6 +391,11 @@ h2 {
 
         &:nth-child(2) {
           background-color: #6fd2e5;
+
+          & .readmore-button:hover {
+            color: #6fd2e5;
+            background-color: white;
+          }
         }
       }
     }
@@ -457,6 +467,10 @@ address {
         font-weight: bold;
         padding: 0.5rem 1rem;
         color: white;
+
+        &:hover {
+          background-color: #6a9a36;
+        }
       }
 
       & .icons {
