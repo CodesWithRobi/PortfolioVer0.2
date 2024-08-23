@@ -444,3 +444,16 @@ i:hover {
   position: relative;
   transform: translateY(-3px);
 }
+
+/* ---------------------------------------------------- */
+
+footer {
+  background-color: black;
+  color: grey;
+
+  & .copyright {
+    width: var(--boxsize);
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+}
