@@ -198,7 +198,7 @@ a {
   align-items: center;
 }
 
-/* ---------------------------------------------------- */
+/* ---Section of readme-------------------------------- */
 
 h2 {
   font-family: serif;
@@ -219,14 +219,90 @@ h2 {
     justify-content: space-between;
 
     & article {
-      background-color: grey;
       flex-basis: calc(100% / 2 - 1.5rem);
 
-      & div {
-        background-color: black;
-        color: white;
+      & .readmore-p1,
+      .readmore-card-main {
         height: 37rem;
+        display: flex;
+        flex-direction: column;
+
+        &>div {
+          flex-basis: calc(100% / 3);
+        }
       }
     }
   }
 }
+
+/* ---------------------------------------------------- */
+
+.readmore-p1 {
+  justify-content: flex-end;
+  background-image: url("../assets/placeholder.png");
+
+  & div {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    backdrop-filter: blur(2px);
+    color: white;
+
+    & h2 {
+      margin: 1.5rem 0 0;
+    }
+
+    & p {
+      font-weight: 500;
+      font-size: 1.2rem;
+      padding: 0 1rem;
+    }
+  }
+}
+
+.readmore-button {
+  border: 2px solid var(--theme-green);
+  color: var(--theme-green);
+  background-color: transparent;
+  width: 9rem;
+  height: 2.3rem;
+  margin: 0 auto 1rem;
+}
+
+/* -----card part of readme---------------------------- */
+
+.readmore-card {
+  display: flex;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 2rem;
+  }
+
+  & img {
+    width: 8rem;
+    height: 8rem;
+    border: 0.5rem solid white;
+    box-shadow: 1px 1px 1px black;
+  }
+
+  & .readmore-p2 {
+    padding-left: 1rem;
+    vertical-align: top;
+
+    & h2 {
+      margin: 0;
+      font-size: 1.2rem;
+
+      &+p {
+        font-size: 0.8rem;
+        margin: 0;
+
+        & a {
+          color: var(--theme-green);
+        }
+      }
+    }
+  }
+}
+
+/* ---------------------------------------------------- */
